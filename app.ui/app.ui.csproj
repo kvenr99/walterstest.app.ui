@@ -77,9 +77,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\CompanyApp\Account\Common\accountDetails.directive.js" />
+    <Content Include="App\CompanyApp\Account\Common\accountDetails.tpl.html" />
     <Content Include="App\CompanyApp\company.controller.js" />
-    <Content Include="App\CompanyApp\Account\account.Controller.js" />
-    <Content Include="App\CompanyApp\Account\account.Service.js" />
+    <Content Include="App\CompanyApp\Account\account.controller.js" />
+    <Content Include="App\CompanyApp\Account\account.service.js" />
     <Content Include="App\CompanyApp\Account\account.tpl.html" />
     <Content Include="App\CompanyApp\company.app.js" />
     <Content Include="Content\bootstrap-theme.css" />

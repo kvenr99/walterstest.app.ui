@@ -1,14 +1,14 @@
-﻿function () {
+﻿(function () {
     'use strict';
-    var app = app.module('companyApp', ['ngRoute']);
-    app.config(['$routeProvider', '$httpProvider', function () {
+    var app = app.module('companyApp', ['ngRoute', 'ui.bootstrap']);
+    app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-            .when('/accounts', {
-            templateUrl: '/App/Company/Account/account.tpl.html',
+            .when('/account', {
+            templateUrl: '/App/Companypp/Account/account.tpl.html',
             controller: 'accountController',
             controllerAs: 'vm'
             })
-            .otherwise({ redirectTo: '/accounts' });
+            .otherwise({ redirectTo: '/account' });
 
     }]);
 })();

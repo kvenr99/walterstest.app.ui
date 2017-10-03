@@ -1,22 +1,28 @@
 ﻿<!DOCTYPE html>
-<html ng-app="companyApp">
+<html>
 <head>
     <meta charset="utf-8" />
     <title></title>
-   
+
 </head>
 <body ng-cloak>
-    <div  ng-controller="companyController as vm">
+    <div ng-app="companyApp" ng-controller="companyController as vm">
        
             <div ng-view=""></div>
       
     </div>
 
     <script src="/Scripts/angular.min.js"></script>
-    <script src="~/App/CompanyApp/company.app.js"></script>
-    <script src="~/App/CompanyApp/company.controller.js"></script>
-    <script src="~/App/CompanyApp/Account/account.Controller.js"></script>
-    <script src="~/App/CompanyApp/Account/account.Service.js"></script>
-    <script src="~/App/CompanyApp/Account/Common/accountDetails.directive.js"></script>
+    <script src="/Scripts/angular-route.js"></script>
+
+    <script src="App/CompanyApp/Account/account.Service.js"></script>
+    <script src="App/CompanyApp/company.controller.js"></script>
+    <script src="App/CompanyApp/Account/account.Controller.js"></script>
+    <script src="App/CompanyApp/Account/Common/accountDetails.directive.js"></script>
+    <script src="App/CompanyApp/company.app.js"></script>
+
 </body>
+
+
 </html>
+

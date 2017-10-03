@@ -1,0 +1,22 @@
+﻿<div>
+   <fieldset>
+       <legend>Accounts Search</legend>
+       <table>
+           <tr>
+               <td>Account Name:</td>
+               <td><input type="text" ng-model="vm.searchText" /></td>
+               <td><input type="button" ng-click="cm.accountSearch()" value="Search"/></td>
+           </tr>
+       </table>
+   </fieldset>
+    <fieldset>
+        <table>
+            <tr ng-repeat="account in vm.accounts">
+                <td>{{account.Name}}</td>
+                <td>{{account.Number}}</td>
+                <td>{{account.Balance}}</td>
+            </tr>
+        </table>
+    </fieldset>
+ 
+</div>
